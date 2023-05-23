@@ -3,91 +3,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Contact Us - HCL NEWS</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Contact Us - HCL NEWS</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <div class="col-md-3 mb-2 mb-md-0">
-              <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                <img src="{% static 'image/logo.png' %}" alt="logo">
-              </a>
-            </div>
-      
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
-              <li><a href="/contactus.html" class="nav-link px-2">Contact us</a></li>
-              <li><a href="/about.html" class="nav-link px-2">About</a></li>
-            </ul>
-      
-            <div class="col-md-3 text-end">
-              <a class="btn btn-outline-primary" href="/signin" role="button">Log in</a>
-              <a class="btn btn-primary" href="/signup" role="button">Sign up</a>
-            </div>
-          </header>
-    </div>
+  <!-- Navbar -->
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="{% static 'image/logo.png' %}" alt="logo">
+        </a>
+      </div>
 
-    <!-- Contact Form Section -->
-    <div class="container py-5">
-        <div class="row">
-            <div class="col">
-                <h2>Contact Us</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="inputName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="inputName" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputLastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="inputLastName" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputNumber" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="inputNumber" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputSubject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="inputSubject" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputDescription" class="form-label">Description</label>
-                        <textarea class="form-control" id="inputDescription" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-                <p class="mt-3">If you are not signed up, <a href="/signup">Sign Up now</a> and get the best experience!</p>
-            </div>
-        </div>
-    </div>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="/bours.html" class="nav-link px-2">Bours</a></li>
+        <li><a href="/contactus.html" class="nav-link px-2">Contact us</a></li>
+        <li><a href="/about.html" class="nav-link px-2">About</a></li>
+      </ul>
 
-    <!-- Footer -->
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-              </a>
-              <span class="mb-3 mb-md-0 text-body-secondary">HCL Enews, © 2023 Company, Inc</span>
-            </div>
-          </footer>
-    </div>
+      <div class="col-md-3 text-end">
+        <a class="btn btn-outline-primary" href="/signin" role="button">Log in</a>
+        <a class="btn btn-primary" href="/signup" role="button">Sign up</a>
+      </div>
+    </header>
+  </div>
 
-    <!-- Bootstrap Script -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+  <!-- Contact Form Section -->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="mb-3">
+            <label for="inputName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputName" required>
+          </div>
+          <div class="mb-3">
+            <label for="inputLastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="inputLastName" required>
+          </div>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="inputNumber" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="inputNumber" required>
+          </div>
+          <div class="mb-3">
+            <label for="inputSubject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="inputSubject" required>
+          </div>
+          <div class="mb-3">
+            <label for="inputDescription" class="form-label">Description</label>
+            <textarea class="form-control" id="inputDescription" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <p class="mt-3">If you are not signed up, <a href="/signup">Sign Up now</a> and get the best experience!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">HCL Enews, © 2023 Company, Inc</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
