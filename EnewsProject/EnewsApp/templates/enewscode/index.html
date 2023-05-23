@@ -19,9 +19,9 @@
     
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
-            <li><a href="/contactus.html" class="nav-link px-2">Contact us</a></li>
-            <li><a href="/about.html" class="nav-link px-2">About</a></li>
-            
+              <li><a href="/bours.html" class="nav-link px-2">Bours</a></li>
+              <li><a href="/contactus.html" class="nav-link px-2">Contact us</a></li>
+              <li><a href="/about.html" class="nav-link px-2">About</a></li>
           </ul>
     
           <div class="col-md-3 text-end">
@@ -30,8 +30,43 @@
           </div>
         </header>
       </div>
+      <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR/USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "light",
+  "isTransparent": true,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
       <!-- Enews Column -->
-      <div class="album py-5 bg-body-tertiary">
+      <div class="album py-5">
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 {% for title, description, image, author, url in newszip %}

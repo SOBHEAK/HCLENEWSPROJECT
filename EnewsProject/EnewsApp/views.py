@@ -146,3 +146,6 @@ def about(request):
 
 def contactus(request):
     return render(request, 'enewscode/contactus.html')
+
+def bours(request):
+    return render(request, 'enewscode/bours.html')
