@@ -138,3 +138,11 @@ def activate(request, uidb64, token):
     else:
         messages.success(request, 'Activation failed please try again')
         return redirect('home')
+
+
+def about(request):
+    return render(request, 'enewscode/about.html')
+
+
+def contactus(request):
+    return render(request, 'enewscode/contactus.html')
