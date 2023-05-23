@@ -47,21 +47,22 @@
         <br><br>
         <h2 class="h1 fw-bold mb-5 mx-1 mx-md-0 mt-4">Login Here</h2>
         <form action="/signin" method="post">
+            {% csrf_token %}
             <div class="row mb-3">
                 <label for="username" class="col-sm-2 col-form-label fw-bold">Username</label>
                 <div class="col-sm-3">
-                    <input type="text" class="form-control" id="username" placeholder="Enter your username here"
+                    <input type="text" name="username" class="form-control" id="username" placeholder="Enter your username here"
                         required="required">
                 </div>
             </div>
             <div class="row mb-3">
                 <label for="password" class="col-sm-2 col-form-label fw-bold">Password</label>
                 <div class="col-sm-3">
-                    <input type="password" class="form-control" id="password" placeholder="Enter your password here"
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password here"
                         required="required">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Connect</button>
         </form>
         {% endblock %}
     </div>

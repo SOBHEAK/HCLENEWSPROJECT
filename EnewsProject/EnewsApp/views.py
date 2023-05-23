@@ -62,14 +62,14 @@ def signup(request):
             return redirect('signup')                  
 
         my_user = User.objects.create_user(username, email, password)
-        my_user.first_name =firstname
+        my_user.first_name = firstname
         my_user.last_name = lastname
         my_user.is_active = False
         my_user.save()
         messages.success(request, 'Your account has been successfully created. we have sent you an email You must comfirm in order to activate your account.')
 # send email when account has been created successfully
-        subject = "Welcome to django-application donaldPro"
-        message = "Welcome "+ my_user.first_name + " " + my_user.last_name + "\n thank for chosing Dprogrammeur website for test login.\n To order login you need to comfirm your email account.\n thanks\n\n\n donald programmeur"
+        subject = "Welcome to django-application "
+        message = "Welcome "+ my_user.first_name + " " + my_user.last_name + "\n thank for chosing Dprogrammeur website for test login.\n To order login you need to comfirm your email account.\n thanks"
         
         from_email = settings.EMAIL_HOST_USER
         to_list = [my_user.email]
@@ -117,11 +117,6 @@ def signin(request):
             return redirect('home') 
 
     return render(request, 'enewscode/signin.html')    
-
-def signout(request):
-    logout(request)
-    messages.success(request, 'logout successfully!')
-    return redirect('home')
 
 def activate(request, uidb64, token):
     try:
